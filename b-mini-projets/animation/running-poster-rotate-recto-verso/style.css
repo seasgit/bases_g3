@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    le corps de page en flex pour centrer le poster
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 480px;
+    height: 700px;
+    perspective: 1000px;
+}
+
+.carte3d {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transition: 1.2s;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(./images/fond_sprinter_top.png);
+    transform: rotateY(180deg);
+}
+
+.back-sign-up {
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.back-sign-up h1 {
+    font-family: 'Paytone One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    font-size: 100px;
+    font-weight: normal;
+}
+
+.back-sign-up span {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.back-sign-up span:nth-of-type(1) {
+    color: yellow;
+}
+
+.back-sign-up span:nth-of-type(2) {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.back-sign-up span:nth-of-type(3) {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+.back-social {
+    position: absolute;
+    bottom: 5px; left: 5px;
+    width: 30px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.back-sign-up h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.back-sign-up .p2 {
+    width: 100%;
+    line-height: 14px;
+}
+
+
+.back-logo {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    width: 160px;
+}
+
+
+.front {
+    background: url(./images/fond-2.png);
+}
+
+.back,
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.main:hover .carte3d {
+    transform: rotateY(180deg);
+}
+
+
+
+/* adapté à la largeur de la section .poster */
+.titre {
+    width: 100%;
+}
+
+
+
+
+
+.ombre {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+}
+
+.runner {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    transform: translateZ(30px);
+}
+
+.logo {
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+.freepik {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
