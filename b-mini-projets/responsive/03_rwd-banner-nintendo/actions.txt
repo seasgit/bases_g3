@@ -1,0 +1,4 @@
+banner rouge  :   	flexbox - mobile / desktop
+banner grise  : 	grid - mobile / tablet / desktop
+
+https://www.nintendo.fr/Hardware/Gamme-Nintendo-Switch/Gamme-Nintendo-Switch-1618251.html
