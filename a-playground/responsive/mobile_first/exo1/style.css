@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile first  */
+
+section {
+    width: 100%;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border:2px solid black;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width:768px) {
+
+    section {
+        max-width: 880px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section div {
+        margin: 0;
+    }
+}
+
+
+@media (min-width:992px){
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    section div {
+        margin-bottom: 20px;
+    }
+}

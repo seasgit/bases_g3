@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    padding: 10px;
+}
+
+figure {
+    margin-bottom: 10px;
+}
+
+figure img { 
+    display: table; /* contournement */
+    width: 100%;
+}
+
+
+@media (min-width:768px) {
+
+    section {
+        padding: 10px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    figure {
+        width: 48%;
+    }
+}
+
+
+@media (min-width:992px) {
+
+    section {
+        padding: 10px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    figure {
+        width: 32%;
+    }
+}
