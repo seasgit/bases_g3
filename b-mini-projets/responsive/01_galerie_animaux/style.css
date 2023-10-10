@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/* ---------------------------------------------
+    Mobile
+*/
 
 section {
     padding: 10px;
@@ -17,6 +20,13 @@ figure img {
     display: table; /* contournement */
     width: 100%;
 }
+
+/* ---------------------------------------------
+    MIN 768
+
+    section en display flex 
+    figure réparties sur 2 colonnes
+*/
 
 
 @media (min-width:768px) {
@@ -33,6 +43,13 @@ figure img {
         width: 48%;
     }
 }
+
+
+/* ---------------------------------------------
+    MIN 992
+
+    figure réparties sur 3 colonnes
+*/
 
 
 @media (min-width:992px) {
