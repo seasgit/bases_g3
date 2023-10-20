@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    body centre  .main
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 
+    .main est en rouge et s'étire sur 100% de body 
+*/
+.main {
+    width: 100%;
+    background: #e60012;
+}
+
+/* 
+    .container répartit verticalement  3 éléments 
+*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* 
+    marges verticales entre 2 éléments
+*/
+
+.i1, .i2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    color:white;
+    font-family: sans-serif;
+}
+
+footer h3 {
+    border-left: 5px solid white;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (min-width:640px) {
+
+    /* .main centre .container */
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .container change de direction et répartit les éléments sur 2 rangées */
+    .container {
+        max-width: 680px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .i2{ width: 52%;}
+    footer{ width: 46%;}
+
+
+}
+
+
+@media (min-width:992px) {
+
+
+    .main {
+        display: flex;
+        justify-content: center;
+        height: 180px;
+    }
+
+    /* .container répartit sur une seule ligne */
+    .container {
+        flex-wrap: nowrap;
+        height: 100%;
+        max-width: 1100px;
+        padding-bottom: 0;
+    }
+
+    .container > * {
+        margin: 0;
+    }
+
+    .i1 {
+        width: 30%;
+    }
+
+    /* .i2 est aligné par le bas */
+    .i2 {
+        width: 38%;
+        align-self: flex-end;
+    }
+
+    footer {
+        width: 26%;
+    }
+
+
+
+
+
+}
