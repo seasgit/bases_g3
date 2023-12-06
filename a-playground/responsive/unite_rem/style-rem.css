@@ -1,0 +1,31 @@
+html,body {
+    /* unité de base paragraphe = 16px */
+    font-size: 16px; /* 1rem  */
+}
+
+/* unités en px rigides 
+h1 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 24px;
+}
+*/
+
+p {
+    font-size: 1.5rem;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size:2rem ;
+}

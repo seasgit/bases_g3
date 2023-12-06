@@ -1,0 +1,18 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+section {
+    width: 100%;
+}
+
+picture {
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}

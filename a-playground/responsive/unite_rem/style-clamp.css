@@ -1,0 +1,12 @@
+
+/*  en mobile jusqu'à 768px */
+h1 {
+    font-size: clamp(2rem, 1.3207rem + 2.7174vw, 2.625rem);
+}
+
+@media (min-width:768px) {
+
+    h1 {
+        font-size: clamp(3rem, 0.4137rem + 5.3812vw, 3.75rem);
+    }
+}
